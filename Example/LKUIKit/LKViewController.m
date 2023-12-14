@@ -7,6 +7,7 @@
 //
 
 #import "LKViewController.h"
+#import <LKUIKit/LKUnreadCountLabel.h>
 
 @interface LKViewController ()
 

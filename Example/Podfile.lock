@@ -1,0 +1,23 @@
+PODS:
+  - LKUIKit (0.1.0):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - LKUIKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  LKUIKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LKUIKit: 528bcb38c04a1021f91df0deefcf52acf2f2d6a6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 42a27e2b5a802c590f49b97808d2aea83d136fce
+
+COCOAPODS: 1.14.3

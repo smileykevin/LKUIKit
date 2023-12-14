@@ -40,7 +40,7 @@
 		12C82D69DC7968C20EE941E8 /* Pods-LKUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKUIKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-LKUIKit_Example/Pods-LKUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		24B9019FC1CB56791659A196 /* Pods_LKUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LKUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3148CA561F680658CAE11090 /* Pods_LKUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LKUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		403D5C6B5BD9919498F83C17 /* LKUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LKUIKit.podspec; path = ../LKUIKit.podspec; sourceTree = "<group>"; };
+		403D5C6B5BD9919498F83C17 /* LKUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LKUIKit.podspec; path = ../LKUIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* LKUIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKUIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,9 +63,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A95CFF3E64BC670651622EF3 /* Pods-LKUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKUIKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LKUIKit_Tests/Pods-LKUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C2509D233992A8214138FDCE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C2509D233992A8214138FDCE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DD397CE306F61DCC58048C69 /* Pods-LKUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKUIKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-LKUIKit_Tests/Pods-LKUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E844747221573126191799D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E844747221573126191799D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EF7F63694285A4705B09EE2B /* Pods-LKUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKUIKit_Example.release.xcconfig"; path = "Target Support Files/Pods-LKUIKit_Example/Pods-LKUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				A95CFF3E64BC670651622EF3 /* Pods-LKUIKit_Tests.debug.xcconfig */,
 				DD397CE306F61DCC58048C69 /* Pods-LKUIKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -347,10 +347,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LKUIKit_Example/Pods-LKUIKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LKUIKit/LKUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
